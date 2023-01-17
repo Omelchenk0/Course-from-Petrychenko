@@ -37,10 +37,31 @@ const personalMovieDB = {
 // personalMovieDB.movies[c] = d;
 
 
-for(let i = 0; i < 2; i++) {
-   a = prompt('Один з останніх фільмів які Ви переглядали?', ''),
-   b = prompt('На скільки Ви його оцінюєте?', ''); // поставив крапку з комою!
+for (let i = 0; i < 2; i++) {
+   const a = prompt('Один з останніх фільмів які Ви переглядали?', ''),
+         b = prompt('На скільки Ви його оцінюєте?', ''); // поставив крапку з комою!
+
+   if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+      personalMovieDB.movies[a] = b;
+      console.log('Done');
+   } else {
+      console.log('Error');
+      i--;
+   }
+
 }
+
+if (personalMovieDB.count < 10) {
+   console.log("Просмотрено довольно мало фильмов");
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+   console.log("Вы классический зритель");
+} else if (personalMovieDB.count >= 30) {
+   console.log("Вы киноман");
+} else {
+   console.log("Произошла ошибка");
+}
+
+console.log(personalMovieDB);
 //коли користувач обирає "відміну" - консоль виведе null
 console.log(personalMovieDB);
 //--------------------------------------------------------------------------------
