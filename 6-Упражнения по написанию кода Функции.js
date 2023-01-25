@@ -5,17 +5,69 @@
 
 // sayHello('Eugene');
 
-function sayHello(Eugene) {
-   return `Привет, ${Eugene}!`;
+function sayHello(name) {
+   return `Привіт, ${name}!`;
 }
 
-sayHello('Alex');
+console.log(sayHello('Eugene')); // використав консоль лог щоб побачити виведення
+
+
 // Место для второй задачи
-function returnNeighboringNumbers() {
-
+function returnNeighboringNumbers(number) {
+   return [number - 1, number, number + 1];
 }
+
+console.log(returnNeighboringNumbers(10));
+
 
 // Место для третьей задачи
-function getMathResult() {
 
+function getMathResult(num, times) {
+
+   //далі це: Если второй аргумент не является числом, 
+   //равен или меньше нуля - то возвращать просто первый аргумент. 
+   //(Проверяем через оператор typeof)
+
+   if (typeof (times) !== 'number' || times <= 0) {
+      return num;
+   }
+
+   let str = '';
+
+   for (let i = 1; i <= times; i++) {
+      if (i === times) {
+         str += `${num * i}`;
+         // Тут без черточек в конце
+      } else {
+         str += `${num * i}---`;
+         // Это тоже самое, что и
+         // str = str + num * i + "---"
+      }
+   }
+
+   return str;
 }
+
+console.log(getMathResult(2, 4));
+
+//-----------------------------
+
+function getMathResult(num, times) {
+   if (typeof (times) != 'number' || times <= 0) {
+      return num;
+   }
+
+   let str = '';
+
+   for (let i = 1; i <= times; i++) {
+      if (i === times) {
+         str += `${num * i}`;
+      } else {
+         str += `${num * i}---`;
+      }
+   }
+   
+   return str;
+}
+
+console.log(getMathResult(2, 4));
