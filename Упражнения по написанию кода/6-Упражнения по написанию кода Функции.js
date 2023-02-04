@@ -1,9 +1,4 @@
-// // Место для первой задачи
-// function sayHello(name) {
-//    return `Привіт, ${name}!`;
-// }
-
-// sayHello('Eugene');
+// Место для первой задачи
 
 function sayHello(name) {
    return `Привіт, ${name}!`;
