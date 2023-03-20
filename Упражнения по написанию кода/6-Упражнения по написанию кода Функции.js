@@ -4,16 +4,30 @@ function sayHello(name) {
    return `Привіт, ${name}!`;
 }
 
-console.log(sayHello('Eugene')); // використав консоль лог щоб побачити виведення
+console.log(sayHello('Євгеній')); // використав консоль лог щоб побачити виведення
 
+//або
+
+function sayHello(name)  {
+   return `Hi, ${name}!`;
+}
+
+console.log(sayHello('Eugene'));
 
 // Место для второй задачи
 function returnNeighboringNumbers(number) {
    return [number - 1, number, number + 1];
 }
 
-console.log(returnNeighboringNumbers(10));
+console.log(returnNeighboringNumbers(3));
 
+// або
+
+function returnNeighboors(number) {
+   return [number - 5, number, number + 5];
+}
+
+console.log(returnNeighboors(10));
 
 // Место для третьей задачи
 
@@ -27,6 +41,7 @@ function getMathResult(num, times) {
       return num;
    }
 
+   
    let str = '';
 
    for (let i = 1; i <= times; i++) {
