@@ -4,7 +4,7 @@ function calculateVolumeAndArea(lenght) {
    if (typeof (lenght) !== 'number' || lenght < 0 || !Number.isInteger(lenght)) {
       return "При вычислении произошла ошибка";
    }
-   let volume = 0;
+   let volume = 0,
    area = 0;
 
    //розраховуємо  об'єм:
@@ -20,7 +20,7 @@ function calculateVolumeAndArea(lenght) {
 }
 
 
-console.log(calculateVolumeAndArea(0));
+console.log(calculateVolumeAndArea(5));
 
 //-------------------нижче скопійований  готовий код
 
