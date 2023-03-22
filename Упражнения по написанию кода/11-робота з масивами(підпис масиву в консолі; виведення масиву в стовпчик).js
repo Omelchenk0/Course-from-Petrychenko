@@ -36,12 +36,12 @@ console.log(standardizeStrings(favoriteCities));
 
 
 
-// Second tasr GPT:
-const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
+// // Second tasr GPT:
+// const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
 
-const formattedCities = favoriteCities.map(city => {
-   return city.charAt(0).toUpperCase() + city.slice(1).toLowerCase();
-});
+// const formattedCities = favoriteCities.map(city => {
+//    return city.charAt(0).toUpperCase() + city.slice(1).toLowerCase();
+// });
 
 
-console.log(formattedCities); // ['Lisbon', 'Rome', 'Milan', 'Dublin']
+// console.log(formattedCities); // ['Lisbon', 'Rome', 'Milan', 'Dublin']

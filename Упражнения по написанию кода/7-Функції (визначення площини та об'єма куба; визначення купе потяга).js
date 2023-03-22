@@ -24,23 +24,23 @@ console.log(calculateVolumeAndArea(5));
 
 //-------------------нижче скопійований  готовий код
 
-function calculateVolumeAndArea(length) {
-   if (typeof (length) !== 'number' || length < 0 || !Number.isInteger(lenght)) {
-      return "При вычислении произошла ошибка";
-   }
+// function calculateVolumeAndArea(length) {
+//    if (typeof (length) !== 'number' || length < 0 || !Number.isInteger(lenght)) {
+//       return "При вычислении произошла ошибка";
+//    }
 
-   let volume = 0,
-      area = 0;
+//    let volume = 0,
+//       area = 0;
 
-   volume = length * length * length;
-   // length ** 3 - это тоже самое, что и выше или варианты через цикл.
-   // ** - это оператор степени, напоминаю. Но онлайн редактор его не принимает =/
-   area = 6 * (length * length);
+//    volume = length * length * length;
+//    // length ** 3 - это тоже самое, что и выше или варианты через цикл.
+//    // ** - это оператор степени, напоминаю. Но онлайн редактор его не принимает =/
+//    area = 6 * (length * length);
 
-   return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
-}
+//    return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
+// }
 
-console.log(calculateVolumeAndArea(15));
+// console.log(calculateVolumeAndArea(15));
 
 
 
